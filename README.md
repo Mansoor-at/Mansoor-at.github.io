@@ -1,2 +1,2 @@
 # Mansoor 
-![This is an image](https://github.com/Mansoor-at/Mansoor-at.github.io/blob/main/Pic.png)
+![This is an image](https://github.com/Mansoor-at/Mansoor-at.github.io/blob/main/pic.png)
