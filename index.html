@@ -50,7 +50,26 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <td style="padding:20px;width:75%;vertical-align:middle">
+           <tr onmouseout="nerfactor_stop()" onmouseover="nerfactor_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nerfactor_image'>
+                  <img src='images/nerfactor_after.png' width="160"></div>
+                <img src='images/nerfactor_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function nerfactor_start() {
+                  document.getElementById('nerfactor_image').style.opacity = "1";
+                }
+
+                function nerfactor_stop() {
+                  document.getElementById('nerfactor_image').style.opacity = "0";
+                }
+                nerfactor_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://people.csail.mit.edu/xiuming/projects/nerfactor/">
             <img src='images/hypernerf_before.jpg' width="160">
            <a href="https://link.springer.com/article/10.1007/s12652-021-03570-6?utm_source=xmol&utm_medium=affiliate&utm_content=meta&utm_campaign=DDCN_1_GL01_metadata">
                 <papertitle> Object detection and segmentation by composition of fast fuzzy C-mean clustering based maps </papertitle> </a>
