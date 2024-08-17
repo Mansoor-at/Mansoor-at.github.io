@@ -15,6 +15,28 @@
   <script defer src="font-awesome-5.9.0/js/brands.min.js"></script>
   <script defer src="font-awesome-5.9.0/js/fontawesome.min.js"></script>
   <script src="js/menuspy.js"></script>
+  <style>
+        /* Style the summary to include a triangle icon */
+        summary {
+            cursor: pointer;
+            list-style: none;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        /* The triangle icon before the summary text */
+        summary::before {
+            content: '\25B6'; /* Right-pointing triangle */
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Change the triangle direction when details is open */
+        details[open] summary::before {
+            content: '\25BC'; /* Down-pointing triangle */
+        }
+    </style>
 </head>
  
 
